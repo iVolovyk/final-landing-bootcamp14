@@ -7,6 +7,10 @@
   }
 }
 
+.slider-wrapper {
+  position: relative;
+}
+
 .section7-slider__item {
   text-align: center;
   list-style: none;
@@ -37,7 +41,7 @@
   letter-spacing: 0.03em;
   font-family: 'Roboto Condensed', sans-serif;
   text-align: left;
-  padding: 0 15px;
+  padding: 0 15px 25px;
   line-height: 30px;
   box-shadow: 0px 10px 30px 0px rgba(2, 2, 1, 0.07);
 }
@@ -53,4 +57,50 @@
 
 .section7-slider__descr {
   font-weight: 700;
+}
+
+.slider-nav {
+  width: 100%;
+  position: absolute;
+  top: 150px;
+}
+
+.slider-nav-prev,
+.slider-nav-next {
+  padding-top: 10px;
+  list-style: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: $main-white;
+  border-radius: 20px;
+  box-shadow: 1.5px 2.598px 9px 0px rgba(2, 2, 1, 0.1);
+  cursor: pointer;
+
+  svg {
+    display: block;
+    fill: $grey-light;
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    svg {
+      fill: $blue;
+    }
+  }
+}
+
+.slider-nav-prev {
+  left: -10px;
+
+  svg {
+    transform: rotate(180deg);
+  }
+
+}
+
+.slider-nav-next {
+  right: -10px;
 }
