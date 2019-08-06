@@ -1,0 +1,83 @@
+header
+  h1.header__title
+  p.header__descr
+  a.header__button
+logo
+  logo__img
+nav
+  nav__list
+  nav__item
+  nav__link
+section1
+  h2.section1__title
+  section1__title_span
+  section1__img-wrap
+  img.section1__img
+section2
+  section__title
+  section2-list
+  section2-list__item
+  section2-list__img
+  section2-list__cite
+  section2-list__title
+section3
+  section__title
+  section__descr
+  section3-list
+  section3-list__item
+  section3-list__title
+  section3-list__years
+  section3-list__years_span
+  section3-list__descr
+section4
+  section__descr
+  section__title
+  test
+  test__question
+section5
+  section__title
+  section5-list
+  section5-list__title
+  section5-list__descr
+  section5-list__descr-span
+  section5__button
+section6
+  section__title
+  section6-list
+  section6-list__img
+  section6-list__title
+  section6-list__descr
+section7
+  section__title
+  section7-slider__list
+  section7-slider__item
+  section7-slider__img
+  section7-slider__title
+  section7-slider-list
+  section7-slider-list__item
+  section7-slider__descr
+section8
+  section__title
+  section__descr
+  section8__img-wrap
+  section8__img
+section9
+  section__title
+  section9-slider__list
+  section9-slider__item
+  section9-slider__img
+  section9-slider__title
+  section9-slider__descr
+  section9-slider__button
+footer
+  footer-logo
+  footer-img
+  address.footer-address
+  footer-contacts
+  footer-button
+  last-line__list
+    last-line__item
+    last-line__link
+  social__list
+    social__item
+    social__link
