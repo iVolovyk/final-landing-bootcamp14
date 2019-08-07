@@ -1,0 +1,42 @@
+.footer {
+  padding-top: 4.375rem;
+  padding-bottom: 2.5rem;
+  background-image: url(../images/section-2-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-logo {
+  display: block;
+  margin: 0 auto;
+  width: 6.6875rem;
+  margin-bottom: 1.5625rem;
+}
+
+.footer-address {
+  width: 11.5625rem;
+  $ls: 0.03em;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 1.875rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.footer-contacts {
+  width: 8.875rem;
+  font-size: 0.875rem;
+  margin: 0 auto;
+  $ls: 0.03em;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.footer-contacts__link {
+  color: #000000;
+}
