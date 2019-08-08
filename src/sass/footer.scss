@@ -5,6 +5,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: 768px) {
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      width: 442px;
+      margin-left: 0;
+    }
+  }
 }
 
 .footer-logo {
@@ -12,6 +21,10 @@
   margin: 0 auto;
   width: 6.6875rem;
   margin-bottom: 1.5625rem;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+  }
 }
 
 .footer-address {
@@ -24,9 +37,15 @@
   font-style: normal;
   margin-bottom: 1.875rem;
   font-family: 'Roboto Condensed', sans-serif;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+    text-align: left;
+    line-height: 25px;
+  }
 }
 
-.footer-contacts {
+.footer-contacts__item {
   width: 8.875rem;
   font-size: 0.875rem;
   margin: 0 auto;
@@ -35,9 +54,18 @@
   font-weight: 400;
   font-style: normal;
   font-family: 'Roboto Condensed', sans-serif;
+
+  @media (min-width: 768px) {
+    text-align: left;
+    line-height: 25px;
+  }
 }
 
-.footer-contacts:last-of-type {
+.footer-contacts__list {
+  list-style: none;
+}
+
+.footer-contacts__item:last-of-type {
   margin-bottom: 30px;
 }
 
@@ -66,11 +94,19 @@
   rgb(222,71,236) 0%, rgb(117,168,249) 100%);
   box-shadow: 5.5px 9.526px 16px 0px
   rgba(73, 119, 237, 0.23);
-  transition: all .2s linear;
+  transition: all .3s linear;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0;
+    width: 242px;
+    height: 57px;
+  }
 }
 
 .footer-button:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
 }
 
 .social__list {
@@ -94,6 +130,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all .3s linear;
 }
 
 .telegram {
@@ -108,3 +145,6 @@
   background-image: url(../images/youtube.png);
 }
 
+.social__link:hover {
+  transform: scale(1.2);
+}
