@@ -1,0 +1,68 @@
+.section2 {
+  padding-top: 33px;
+  padding-bottom: 45px;
+
+  background-image: url("../images/section2/section-2-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 75% 100%;
+  background-size: contain;
+}
+
+.section2__title {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 700; //According to the design we need font weight 900 here.
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    color: #e8e8f2;
+    text-align: center;
+
+    margin-bottom: 9px;
+}
+
+.section__title { 
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    color: #2c2c2c;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section2-list {
+    padding-top: 79px;
+    list-style: none;
+}
+
+.section2-list__item {}
+
+.section2-list__img {
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.section2-list__author {
+    font-family: "Dancing Script", "Arial", sans-serif; // need some similar font with cyrilic simbols
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #edc65a;
+    text-align: center;
+}
+
+.section2-list__cite {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #545556;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.section2-list__item:not(:last-child) .section2-list__cite {
+    margin-bottom: 21px;
+}
