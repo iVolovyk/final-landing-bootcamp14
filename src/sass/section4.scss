@@ -99,6 +99,7 @@
 .question__item {
   list-style: none;
 }
+
 .question__item:not(:last-of-type) {
   margin-bottom: 40px;
 }
@@ -120,6 +121,7 @@
   color: $main-yellow;
   line-height: 19px;
   margin-bottom: 11px;
+
   &::before {
     position: relative;
     top: -2px;
@@ -133,6 +135,7 @@
     outline: 2px solid $main-yellow;
     transition: all 0.2s ease;
   }
+
   &::after {
     counter-increment: question;
     content: " "counter(question);
@@ -140,6 +143,7 @@
 }
 
 .question__text {
+  display: block;
   color: $font-gray;
 }
 
@@ -173,6 +177,7 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+
   .prev {
     transform: rotate(180deg);
   }
