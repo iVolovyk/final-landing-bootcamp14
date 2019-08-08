@@ -148,3 +148,21 @@
 .social__link:hover {
   transform: scale(1.2);
 }
+
+.last-line__list {
+  text-align: center;
+  list-style: none;
+  line-height: 1.5625rem;
+}
+
+.last-line__item {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: $ls;
+}
+
+.last-line__link {
+  color: #a7adb6;
+}
