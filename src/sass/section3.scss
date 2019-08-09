@@ -80,6 +80,21 @@
   background-color: #e8f1fa;
 }
 
+@media (min-width: 768px) and (max-width: 1439px) {
+  .section3-list__item:nth-child(1) {
+    background-color: #f5f9fe;
+  }
+  .section3-list__item:nth-child(2) {
+    background-color: #e8f1fa;
+  }
+  .section3-list__item:nth-child(3) {
+    background-color: #e8f1fa;
+  }
+  .section3-list__item:nth-child(4) {
+    background-color: #f5f9fe;
+  }
+}
+
 .section3-list__title {
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-weight: 700;
@@ -88,20 +103,26 @@
   letter-spacing: 0.03em;
   color: #2c2c2c;
   text-transform: capitalize;
-
-  padding-left: 38px;
-
+  padding-left: 22px;
   margin-bottom: 26px;
+  text-transform: capitalize;
+  padding-left: 32px;
+  font-size: 20px;
+  line-height: 25px;
+  color: #2c2c2c;
+  margin-bottom: 26px;
+  position: relative;
 }
 
 .section3-list__title::before {
-  position: relative;
-  left: -20px;
+  position: absolute;
+  left: 0px;
+  top: 2px;
   display: inline-block;
   content: '';
   width: 18px;
   height: 18px;
-  background-image: url('../images/section3/star.svg');
+  background-image: url(../images/section3/star.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

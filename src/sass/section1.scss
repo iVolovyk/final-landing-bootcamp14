@@ -35,7 +35,7 @@
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #565656;
+  color: $font-black;
 
   margin: 0 auto;
   margin-bottom: 50px;
@@ -88,6 +88,10 @@
   border-radius: 50%;
   border: 5px solid rgba(240, 240, 240, 0.6);
   box-shadow: 7.5px 12.99px 25px 0px rgba(96, 96, 97, 0.21);
+  
+  @media (min-width: 768px) {
+    border: 11px solid rgba(240, 240, 240, 0.6);
+  }
 }
 
 .section1__img_big {
