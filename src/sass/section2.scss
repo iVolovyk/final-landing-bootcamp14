@@ -1,0 +1,205 @@
+.section2 {
+    position: relative;
+    z-index: 2;
+    padding: 33px 0 45px;
+    overflow: hidden;
+
+  @media (min-width: 768px) {
+      padding: 72px 0 45px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+}
+
+.section2::before {
+  position: absolute;
+  top: 86px;
+  left: 0;
+  z-index: -1;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 190px;
+  background-size: cover;
+  background-position: top center;
+  background-image: url('../images/section2/section-2-bg.svg');
+  background-repeat: no-repeat;
+  // background-position: 85px center;
+  background-size: contain;
+
+  @media (min-width: 768px) {
+    height: 390px;
+    top: 186px;
+  }
+
+  @media (min-width: 1440px) {
+    height: 800px;
+    top: 186px;
+  }
+}
+
+.section2::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 260px;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: calc(100% - 260px);
+  background-color: #f4f9fe;
+
+  @media (min-width: 768px) {
+    top: 350px;
+    height: calc(100% - 590px);
+  }
+
+  @media (min-width: 1440px) {
+    top: 600px;
+    height: calc(100% - 480px);
+  }
+}
+.section2__title {
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-weight: 700; //According to the design we need font weight 900 here.
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+  color: #e8e8f2;
+  text-align: center;
+
+  margin-bottom: 9px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 72px;
+
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    
+  }
+}
+
+.section__title {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #2c2c2c;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.section2-list {
+  padding-top: 79px;
+  list-style: none;
+
+  @media (min-width: 768px) {
+    padding-top: 142px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: 1440px) {
+    justify-content: space-around;
+  }
+}
+
+.section2-list__item {
+  @media (min-width: 768px) {
+    width: 590px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1440px) {
+      
+  }
+
+}
+
+@media (max-width: 767px) {   
+    .section2-list__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1439px) {   
+    .section2-list__item:not(:last-child) {
+        margin-bottom: 50px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .section2-list__item:not(:nth-last-child(-n +2)) {
+        margin-bottom: 95px;
+    }
+  }
+
+.section2-list__img {
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 16px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    width: 225px;
+  }
+}
+
+.section2-list__text {
+  @media (min-width: 768px) {
+    width: 330px;
+
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.section2-list__cite {
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: $dark;
+  text-align: center;
+  padding: 0 40px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: left;
+
+    margin-bottom: 48px;
+  }
+}
+
+.section2-list__author {
+  font-family: 'Dancing Script', 'Arial', sans-serif; // need some similar font with cyrilic simbols
+  font-size: 20px;
+  font-style: italic;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #edc65a;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 23px;
+    line-height: 35px;
+    text-align: left;
+  }
+}

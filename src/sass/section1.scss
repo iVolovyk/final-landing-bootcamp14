@@ -1,0 +1,133 @@
+.section1__container {
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.section1 {
+  background-image: url('../images/section1/section-1-bg@2x.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 280px auto;
+
+  padding: 16px 0 33px;
+
+  @media (min-width: 768px) {
+    padding: 33px 0 72px;
+
+    background-position: bottom center;
+    background-size: auto;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 103px 0 80px;
+    background-position: center left;
+  }
+}
+
+.section1__title {
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $font-black;
+
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 97px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 55px;
+    line-height: 75px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+
+    width: 670px;
+    flex-basis: 670px;
+  }
+}
+
+.section1__title_yellow {
+  color: #eebf3e;
+}
+
+.section1__img-wrap {
+  position: relative;
+
+  width: 185px;
+  height: 144px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 378px;
+    height: 296px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+    padding: 0;
+    flex-basis: 570px;
+
+    width: 570px;
+    height: 450px;
+  }
+}
+
+.section1__img {
+  border-radius: 50%;
+  border: 5px solid rgba(240, 240, 240, 0.6);
+  box-shadow: 7.5px 12.99px 25px 0px rgba(96, 96, 97, 0.21);
+  
+  @media (min-width: 768px) {
+    border: 11px solid rgba(240, 240, 240, 0.6);
+  }
+}
+
+.section1__img_big {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 120px;
+  height: 120px;
+
+  @media (min-width: 768px) {
+    width: 247px;
+    height: 247px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 380px;
+    height: auto;
+  }
+}
+
+.section1__img_small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 80px;
+  height: 80px;
+
+  @media (min-width: 768px) {
+    width: 168px;
+    height: 168px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 260px;
+    height: auto;
+  }
+}
