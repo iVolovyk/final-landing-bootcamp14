@@ -1,0 +1,129 @@
+.section8 {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 108px;
+  background-image: url(../images/section-4-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: -2;
+
+  &::before {
+    @media (min-width: 768px) {
+      display: block;
+      content: '';
+      width: 185px;
+      height: 185px;
+      position: absolute;
+      background-image: url(../images/section8/planet.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      top: 75px;
+      right: 20%;
+    }
+  }
+
+  &::before {
+    @media (min-width: 1440px) {
+      top: 90px;
+      left: 33%;
+    }
+  }
+
+  .container {
+    @media (min-width: 1440px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 1px;
+  }
+}
+
+.section8__text-box {
+  margin: 0 auto;
+  width: 72%;
+  text-align: center;
+  color: $main-white;
+  margin-bottom: 25px;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+    text-align: left;
+    width: 48%;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 33%;
+  }
+
+  .section__title {
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 1440px){
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.section__descr {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: $ls;
+  font-family: $rob;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+
+.section8__img-wrap {
+  position: relative;
+
+  &::before {
+    @media (min-width: 768px) {
+      background-image: url(../images/section8/confetti.svg);
+      background-position: center;
+      background-size: contain;
+      position: absolute;
+      display: block;
+      content: '';
+      width: 910px;
+      height: 878px;
+      top: -183px;
+      left: -112px;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 100px;
+  }
+}
+
+.section8__img {
+  margin: 0 auto;
+  @media (min-width: 1440px) {
+    width: 640px;
+    height: 640px;
+    object-fit: contain;
+  }
+}
+
